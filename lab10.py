@@ -61,7 +61,8 @@ def decode_string(s):
     return current_str
 
 def daily_temperatures(temps):
-    # Outline:
+    # Outline: define a stack to hold indices of the temperatures. 
+    # Check each temperature against the top of the stack to find warmer days.
     #   ...
     # TODO: for each day, return how many days you'd wait for a WARMER temperature.
     #   Put 0 if no warmer day ever comes.
@@ -78,7 +79,9 @@ def daily_temperatures(temps):
 
 
 def num_islands(grid):   # Part 4 - stretch (optional)
-    # Outline: define a DFS function to explore the grid. 
+    # Outline: define a DFS function to explore the grid. Then iterate through each cell in the grid, 
+    # and for each unvisited land cell, call DFS to mark all connected land cells as visited and 
+    # increment the island count.
     #   ...
     # TODO: `grid` is a list of equal-length strings of "1" (land) and "0" (water).
     #   Count the islands - groups of "1"s connected up/down/left/right (not diagonally).
